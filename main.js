@@ -10,14 +10,14 @@ app.all('*', (req, res) => {
 
     console.log(req.method, req.path)
     console.log("")
-    
+
     console.log("[HEADERS]")
-    console.log(req.headers)
+    console.log(JSON.stringify(req.headers, null, 2))
     console.log("")
-    
+
     console.log("[BODY]")
-    console.log(req.body)
-    console.log("")
+    console.log(JSON.stringify(req.body, null, 2))
+    console.log("") 
 
     console.log("")
     console.log("\\================== " + counter + " ==================/")
